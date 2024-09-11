@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp-Reactivity", "CSharp-Reactivity\CSharp-Reactivity.csproj", "{7C87C450-0C8A-45D6-815B-FB22AF66005C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp-Reactivity.Tests", "CSharp-Reactivity.Tests\CSharp-Reactivity.Tests.csproj", "{367F07E1-3644-4867-86F8-DA63AE049806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C87C450-0C8A-45D6-815B-FB22AF66005C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C87C450-0C8A-45D6-815B-FB22AF66005C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C87C450-0C8A-45D6-815B-FB22AF66005C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C87C450-0C8A-45D6-815B-FB22AF66005C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367F07E1-3644-4867-86F8-DA63AE049806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367F07E1-3644-4867-86F8-DA63AE049806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367F07E1-3644-4867-86F8-DA63AE049806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367F07E1-3644-4867-86F8-DA63AE049806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
