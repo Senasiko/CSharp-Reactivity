@@ -2,20 +2,20 @@ using R3;
 
 namespace Reactivity;
 
-enum ReactiveListChangeType
+public enum ReactiveListChangeType
 {
     Add,
     Remove,
     Clear
 }
 
-struct ReactiveListChangeEvent<T>
+public struct ReactiveListChangeEvent<T>
 {
     public T Item;
     public ReactiveListChangeType Type;
 }
 
-class ReactiveList<T>: IReactive
+public class ReactiveList<T>: IReactive
 {
     public EffectManager EffectManager { get; }
     

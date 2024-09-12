@@ -3,7 +3,7 @@ using R3;
 namespace Reactivity;
 
 
-class Ref<T>: IReactive
+public class Ref<T>: IReactive
 {
     private EffectManager _effectManager;
     

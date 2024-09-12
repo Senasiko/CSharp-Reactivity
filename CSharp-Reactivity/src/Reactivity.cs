@@ -3,13 +3,13 @@ using R3;
 namespace Reactivity;
 
     
-interface IReactive
+public interface IReactive
 {
     EffectManager EffectManager { get; }
     
 }
 
-class EffectScope: IDisposable
+public class EffectScope: IDisposable
 {
     private static readonly Stack<Effect> Stack = new();
     
@@ -29,7 +29,7 @@ class EffectScope: IDisposable
     }
 }
 
-abstract class Effect: IDisposable
+public abstract class Effect: IDisposable
 {
 
     private HashSet<IReactive> deps = new();
@@ -50,11 +50,18 @@ abstract class Effect: IDisposable
     }
 }
 
-class EffectManager(IReactive reactive)
+public class EffectManager
 {
     private readonly HashSet<Effect> _effects = new();
     
     public int Count => _effects.Count;
+    
+    private readonly IReactive reactive;
+
+    public EffectManager(IReactive reactive)
+    {
+        this.reactive = reactive;
+    }
 
     public void AddEffect(Effect effect)
     {
@@ -76,7 +83,7 @@ class EffectManager(IReactive reactive)
     }
 }
 
-struct ReactiveChangeEvent<T>
+public struct ReactiveChangeEvent<T>
 {
     public T Value;
     public T? OldValue;

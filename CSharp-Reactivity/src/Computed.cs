@@ -3,13 +3,12 @@ using R3;
 namespace Reactivity;
 
 
-struct ComputedChangeEvent<T>
+public struct ComputedChangeEvent<T>
 {
     public T? OldValue;
 }
 
-
-class Computed<T> : Effect, IReactive
+public class Computed<T> : Effect, IReactive
 {
     private Func<T> getter;
 
@@ -20,7 +19,7 @@ class Computed<T> : Effect, IReactive
     public EffectManager EffectManager { get; }
 
     public Subject<ComputedChangeEvent<T>> OnChange = new();
-
+    
     public Computed(Func<T> fn)
     {
         getter = fn;

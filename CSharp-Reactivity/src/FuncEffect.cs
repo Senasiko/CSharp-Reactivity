@@ -1,6 +1,6 @@
 namespace Reactivity;
 
-class FuncEffect<T>: Effect
+public class FuncEffect<T>: Effect
 {
     private Func<T> _fn;
 
